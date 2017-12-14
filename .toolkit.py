@@ -567,9 +567,9 @@ def unix_root_from_scratch():
     start_info()
     print("The following procedures can take up to 30 minutes!")
     if allatonce:
-		print("To finally play back the rooted system.img.gz a confirmation will be needed then.")
+        print("To finally play back the rooted system.img.gz a confirmation will be needed then.")
     else:
-		print("To finally play back the rooted system.img.gz NO confirmation will be needed (all at once).")
+        print("To finally play back the rooted system.img.gz NO confirmation will be needed (all at once).")
     wait_for_enter_start()
 
     subprocess_call("sudo chmod +x " + bin_folder + "adb")
@@ -1432,7 +1432,7 @@ def check_device_powered(out):
 
 
 def timestamp():
-	return time.strftime('%Y/%m/%d %H:%M:%S')
+    return time.strftime('%Y/%m/%d %H:%M:%S')
     
 def user_input(msg):
     if python3:
