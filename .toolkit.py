@@ -37,7 +37,7 @@ windows = True
 adb = ""
 if os_name == "posix":
     windows = False
-    adb = "sudo " + bin_folder + "adb "
+    adb = "sudo " + "adb "
 elif os_name == "nt":
     adb = bin_folder + "adb.exe "
 else:
@@ -572,7 +572,7 @@ def unix_root_from_scratch():
         print("To finally play back the rooted system.img.gz NO confirmation will be needed (all at once).")
     wait_for_enter_start()
 
-    subprocess_call("sudo chmod +x " + bin_folder + "adb")
+    # subprocess_call("sudo chmod +x " + bin_folder + "adb")
 
     check_adb()
     push_busybox()
